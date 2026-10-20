@@ -236,6 +236,14 @@ config OMAP3_SDRC_AC_TIMING
 	  wish to say no.  Selecting yes without understanding what is
 	  going on could result in system crashes;
 
+config KM_BBB_AM335X_EXP_BOARD_DTB
+	bool "Kernel Masters BBB AM335x Expansion Board DTB"
+	depends on SOC_AM33XX
+	help
+	  Build the Device Tree Blob for the Kernel Masters
+          BeagleBone Black AM335x Expansion Board.
+
+
 endmenu
 
 endif
